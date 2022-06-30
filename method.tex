@@ -1,10 +1,13 @@
 % @Author: WU Zihan
 % @Date:   2022-05-09 11:20:09
 % @Last Modified by:   WU Zihan
-% @Last Modified time: 2022-05-25 09:55:50
+% @Last Modified time: 2022-06-30 16:34:24
 \section{Method/Ellipse Detector}
-In this section, what we indroduce is an ellipse detection method with probability control and based on the co-clustering scheme. The whole picture
-comprises mainly: (1) Arc-segment Detection; (2) Generation of Candiates Field; (3) Correlation (4) Co-clustering and (5) Validation. Details are elaborated upon in the following sections.
+In this section, what we introduce is an ellipse detection method with probability control based on the co-clustering scheme. The whole picture comprises mainly: (1) Arc Detection; (2) Generation of Candidates Field; (3) Correlation (4) Co-clustering and (5) Validation. Details are elaborated upon in the following sections.
 
-\subsection{Arc-segment Detection}
-Most arc, but most canny\cite{kim2002fast,dong2018accurate}. 
+\subsection{Arc Detection}
+It is a very popular scheme to begin the ellipse detection with arc detections. In our procedure, it is expected to get long arcs as many as possible. Many of them adopt the canny edge detector to extract the arcs from the edge.\cite{dong2018accurate,jia2017fast} Nevertheless, they dropped the intensity information at first, and thus 
+
+
+
+\subsection{Cocluster Arcs}
